@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 引入样式文件 -->
+    <%- css('css/layout') %>
+</head>
+<body>
+    <div id="layout">
+        <!-- 顶部导航 -->
+        <nav><%- include("nav.ejs") %></nav>
+        <!-- 主题内容 -->
+        <div id="layout-content"><%- body %></div>
+    </div>
+</body>
+</html>

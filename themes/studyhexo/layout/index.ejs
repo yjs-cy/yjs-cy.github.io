@@ -1,0 +1,25 @@
+<!-- 引入样式文件 -->
+<%- css('css/index') %>
+<div class="home">
+    <ul class="left">
+        <% site.posts.forEach(function(item) { %>
+            <li class="home-item">
+                <a href="<%- item.path %>" class="home-item-container">
+                    <div class="home-left">
+                        <div class="home-head">
+                            <div class="home-title"><%= item.title %></div>
+                            <div class="home-head-smalltag">
+                                <div class="home-author" style="margin-right: 10px;"><%= theme.author %></div>
+                                <div class="home-date"><%= date(item.date, "YYYY-MM-DD") %></div>
+                            </div>
+                        </div>
+                        <div class="home-abstract"><%= item.description %></div>
+                        <div class="home-footer">这个分类稍后研究一下</div>
+                    </div>
+                    <img src="<%= url_for(item.path+item.cover) %>" alt="封面图片"/>
+                </a>
+            </li>
+        <% }); %>
+    </ul>
+    <div class="right"></div>
+</div>

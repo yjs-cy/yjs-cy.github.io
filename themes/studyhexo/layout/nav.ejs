@@ -1,0 +1,10 @@
+<!-- 引入样式文件 -->
+<%- css('css/nav') %>
+<div class="nav-shadow"></div>
+<ul class="nav">
+    <% for ( item in theme.navs ) { %>
+        <li class="<%= is_current(theme.navs[item]) ? 'nav-item active' : 'nav-item' %>">
+            <a href="<%- theme.navs[item] %>" class="nav-item-link"><%- item %></a>
+        </li>
+    <% } %>
+</ul>
