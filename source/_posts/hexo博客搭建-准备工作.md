@@ -1,6 +1,7 @@
 ---
-title: hexo博客搭建-准备工作
+title: hexo博客搭建（一）
 date: 2024-03-08 15:04:02
+description: 第一篇主要是把前期的准备工作和基础版本发布整理出来后面会不断增加。hexo+github pages搭建个人博客的一些前置准备。
 tags:
 ---
 >本系列文章带大家从零到一完成GitHub Pages+Hexo的博客搭建。
