@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 引入样式文件 -->
+    
+<link rel="stylesheet" href="/css/layout.css">
+
+<meta name="generator" content="Hexo 7.1.1"></head>
+<body>
+    <div id="layout">
+        <!-- 顶部导航 -->
+        <nav><!-- 引入样式文件 -->
+
+<link rel="stylesheet" href="/css/nav.css">
+
+<div class="nav-shadow"></div>
+<ul class="nav">
+    
+        <li class="nav-item">
+            <a href="/" class="nav-item-link">首页</a>
+        </li>
+    
+        <li class="nav-item">
+            <a href="/about" class="nav-item-link">关于</a>
+        </li>
+    
+</ul></nav>
+        <!-- 主题内容 -->
+        <div id="layout-content"><!-- 引入样式文件 -->
+
+<link rel="stylesheet" href="/css/post.css">
+
+<div id="post">
+    <div id="article">
+        <div class="article-title">css冷门用法</div>
+        <h1 id="1-宽高比"><a href="#1-宽高比" class="headerlink" title="1.宽高比"></a>1.宽高比</h1><p><strong>aspect-ratio: 1 &#x2F; 1;</strong> 指定盒子的宽高比为 1:1，即宽度和高度相等</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">img&#123;</span><br><span class="line">    width: 80%; /* 设置盒子的宽度 */</span><br><span class="line">    aspect-ratio: 1 / 1; /* 指定盒子的宽高比为 1:1，即宽度和高度相等 */</span><br><span class="line">    background-color: aqua;</span><br><span class="line">    border-radius: 50%;</span><br><span class="line">    transition: transform 0.5s;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+<h1 id="2-高度自适应"><a href="#2-高度自适应" class="headerlink" title="2.高度自适应"></a>2.高度自适应</h1><p><strong>height: fit-content;</strong> 这将使容器的高度根据其内容自动调整。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#article &#123;</span><br><span class="line">    flex: 1;</span><br><span class="line">    padding: 30px;</span><br><span class="line">    height: fit-content;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    </div>
+    <div class="right">
+        <div class="right-div"><!-- 引入样式文件 -->
+
+<link rel="stylesheet" href="/css/author.css">
+
+
+<div class="author">
+    <img src="/author.jpeg" alt="">
+    <div>Ryan</div>
+    <div class="yan">我就是菜鸡</div>
+    <div class="tag">
+        <div>
+            <span>4</span>
+            <span>文章</span>
+        </div>
+        <div>
+            <span>0</span>
+            <span>分类</span>
+        </div>
+        <div>
+            <span>0</span>
+            <span>标签</span>
+        </div>
+    </div>
+</div></div>
+    </div>
+</div></div>
+    </div>
+    
+</body>
+</html>

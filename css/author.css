@@ -1,0 +1,48 @@
+.author {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.author img {
+  width: 80%;
+  /* 设置盒子的宽度 */
+  aspect-ratio: 1 / 1;
+  /* 指定盒子的宽高比为 1:1，即宽度和高度相等 */
+  background-color: aqua;
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+.author img:hover {
+  animation: rotate 5s infinite linear;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.author .tag {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.author .tag div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
+.author .tag div:nth-child(2) {
+  border-left: 1px solid #9d9d9d;
+  border-right: 1px solid #9d9d9d;
+}
+.author .yan {
+  color: #9d9d9d;
+}
