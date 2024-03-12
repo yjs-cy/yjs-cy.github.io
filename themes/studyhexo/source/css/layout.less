@@ -21,7 +21,7 @@ html,body,#layout{
     #layout-content{
         width: 100%;
         height: calc(100% - 50px);
-        padding: 0 400px;
+        overflow: auto;
         margin-top: 50px;
         box-sizing: border-box;
         background-color: #fff;
@@ -30,3 +30,24 @@ html,body,#layout{
 ul li{
     list-style: none;
 }
+// 滚动条的样式
+::-webkit-scrollbar {
+    width: 5px; /* 滚动条宽度 */
+  }
+  
+  /* 背景颜色 */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* 背景颜色 */
+  }
+  
+  /* 滚动条滑块 */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* 滚动条颜色 */
+    border-radius: 3px;
+  }
+  
+  /* 滑块悬停样式 */
+  ::-webkit-scrollbar-thumb:hover {
+    border-radius: 3px;
+    background: #555; 
+  }

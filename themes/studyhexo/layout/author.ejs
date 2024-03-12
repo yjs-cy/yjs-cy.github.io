@@ -1,0 +1,22 @@
+<!-- 引入样式文件 -->
+<%- css('css/author') %>
+
+<div class="author">
+    <img src="/author.jpeg" alt="">
+    <div>Ryan</div>
+    <div class="yan">我就是菜鸡</div>
+    <div class="tag">
+        <div>
+            <span><%= site.posts.length %></span>
+            <span>文章</span>
+        </div>
+        <div>
+            <span><%- site.categories.length %></span>
+            <span>分类</span>
+        </div>
+        <div>
+            <span><%- site.tags.length %></span>
+            <span>标签</span>
+        </div>
+    </div>
+</div>

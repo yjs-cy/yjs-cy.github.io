@@ -1,8 +1,7 @@
 ---
 title: about
 date: 2024-03-06 15:01:49
-cover: "/index/cover.png"
-top_img: "/index/cover.png"
+top_img: "/index/top_image.jpg"
 layout: about
 ---
 

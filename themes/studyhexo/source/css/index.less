@@ -1,6 +1,8 @@
 .home{
     display: flex;
     width: 100%;
+    padding: 20px 400px 0 400px;
+    box-sizing: border-box;
     .left{
         flex: 1;
         .home-item{
@@ -18,45 +20,51 @@
             }
             .home-left{
                 flex: 1;
+                display: flex;
+                flex-direction: column;
+                .home-head{
+                    display: flex;
+                    align-items: end;
+                    margin-bottom: 10px;
+                    .home-title{
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-right: 20px;
+                        color: #000;
+                    }
+                    .home-head-smalltag{
+                        flex: 1;
+                        display: flex;
+                        font-size: 12px;
+                        justify-content: end;
+                    }
+                }
+                .home-abstract{
+                    width: 100%;
+                    flex: 1;
+                }
+                .home-footer{
+                    margin-top: 10px;
+                    font-size: 12px;
+                }
             }
             img{
                 width: 200px;
                 height: 100%;
+                margin-right: 20px;
             }
-        }
-        .home-item:nth-child(1){
-            margin-top: 20px;
         }
     }
 }
-.home-left{
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-    .home-head{
-        display: flex;
-        align-items: end;
-        margin-bottom: 10px;
-        .home-title{
-            font-size: 20px;
-            font-weight: 600;
-            margin-right: 20px;
-            color: #000;
-        }
-        .home-head-smalltag{
-            flex: 1;
-            display: flex;
-            font-size: 12px;
-            justify-content: end;
-        }
-    }
-    .home-abstract{
-        width: 100%;
-        flex: 1;
-    }
-    .home-footer{
-        margin-top: 10px;
-        font-size: 12px;
-
+.right{
+    width: 200px;
+    margin-left: 10px;
+    .right-div{
+        width: 200px;
+        height: 300px;
+        position: fixed;
+        top: 70px;
+        right: 400px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     }
 }

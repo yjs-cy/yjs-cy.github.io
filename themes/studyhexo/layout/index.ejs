@@ -5,6 +5,9 @@
         <% site.posts.forEach(function(item) { %>
             <li class="home-item">
                 <a href="<%- item.path %>" class="home-item-container">
+                    <% if ( item.cover ) { %>
+                        <img src="<%= url_for(item.path+item.cover) %>" alt="封面图片"/>
+                    <% } %>
                     <div class="home-left">
                         <div class="home-head">
                             <div class="home-title"><%= item.title %></div>
@@ -16,10 +19,11 @@
                         <div class="home-abstract"><%= item.description %></div>
                         <div class="home-footer">这个分类稍后研究一下</div>
                     </div>
-                    <img src="<%= url_for(item.path+item.cover) %>" alt="封面图片"/>
                 </a>
             </li>
         <% }); %>
     </ul>
-    <div class="right"></div>
+    <div class="right">
+        <div class="right-div"><%- include("author.ejs") %></div>
+    </div>
 </div>

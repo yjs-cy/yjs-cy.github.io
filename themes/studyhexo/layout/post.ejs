@@ -1,5 +1,11 @@
 <!-- 引入样式文件 -->
 <%- css('css/post') %>
 <div id="post">
-    <div id="article"><%- page.content %></div>
+    <div id="article">
+        <div class="article-title"><%= page.title %></div>
+        <%- page.content %>
+    </div>
+    <div class="right">
+        <div class="right-div"><%- include("author.ejs") %></div>
+    </div>
 </div>
