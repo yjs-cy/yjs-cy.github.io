@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 引入样式文件 -->
+    
+<link rel="stylesheet" href="/css/layout.css">
+
+<meta name="generator" content="Hexo 7.1.1"></head>
+<body>
+    <div id="layout">
+        <!-- 顶部导航 -->
+        <nav><!-- 引入样式文件 -->
+
+<link rel="stylesheet" href="/css/nav.css">
+
+<div class="nav-shadow"></div>
+<ul class="nav">
+    
+        <li class="nav-item">
+            <a href="/" class="nav-item-link">首页</a>
+        </li>
+    
+        <li class="nav-item">
+            <a href="/about" class="nav-item-link">关于</a>
+        </li>
+    
+</ul></nav>
+        <!-- 主题内容 -->
+        <div id="layout-content"><!-- 引入样式文件 -->
+
+<link rel="stylesheet" href="/css/post.css">
+
+<div id="post">
+    <div id="article">
+        <div class="article-title">hexo基础版本</div>
+        <blockquote>
+<p>这里默认你的电脑已经配置好了开发环境。如果没有等我写完对应的文章哈，到时会在这里添加链接。</p>
+</blockquote>
+<h1 id="hexo博客搭建"><a href="#hexo博客搭建" class="headerlink" title="hexo博客搭建"></a>hexo博客搭建</h1><h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//下载</span><br><span class="line">npm install -g hexo-cli</span><br><span class="line">//查看版本</span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+<h2 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h2><h3 id="已有文件夹"><a href="#已有文件夹" class="headerlink" title="已有文件夹"></a>已有文件夹</h3><p>将文件夹拖入VS code中执行下方命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//初始化</span><br><span class="line">hexo init</span><br><span class="line">//安装依赖</span><br><span class="line">npm i</span><br><span class="line">//启动博客</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<h3 id="无文件夹"><a href="#无文件夹" class="headerlink" title="无文件夹"></a>无文件夹</h3><p>直接打开想要将博客存放的位置右键打开自带终端执行一下命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//初始化，name替换成自己博客的名字</span><br><span class="line">hexo init name</span><br><span class="line">//进入博客</span><br><span class="line">cd name</span><br><span class="line">//安装依赖</span><br><span class="line">npm i</span><br><span class="line">//启动博客</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>两种方式都可以得到一个地址 <a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a> 打开浏览器试运行吧！！！</p>
+<p>你能看到如下图所示证明你的博客已经搭好了，下面就该发布代码啦。<br><img src="/2024/03/15/hexo%E5%9F%BA%E7%A1%80%E7%89%88%E6%9C%AC/%E5%88%9D%E5%A7%8B%E5%8C%96.png"></p>
+<h1 id="发布到github"><a href="#发布到github" class="headerlink" title="发布到github"></a>发布到github</h1><p>对了，如果你和我一样用的VS code那么你就不用关闭项目了，直接在下方终端的右上角找一个书的按钮点击会分出一个终端，我们接下来的命令就可以在这里执行了。<br><img src="/2024/03/15/hexo%E5%9F%BA%E7%A1%80%E7%89%88%E6%9C%AC/%E5%88%86%E5%B1%8F%E7%BB%88%E7%AB%AF.png"></p>
+<h2 id="部署我们的博客"><a href="#部署我们的博客" class="headerlink" title="部署我们的博客"></a>部署我们的博客</h2><p>第一步：去github上注册一个账号并创建一个名为username.github.io的项目。如下图我的账号名字就叫yjs-cy<br><img src="/2024/03/15/hexo%E5%9F%BA%E7%A1%80%E7%89%88%E6%9C%AC/%E9%A1%B9%E7%9B%AE%E5%90%8D%E5%AD%97.png"><br>第二步：生成SSH添加到GitHub</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//全局配置</span><br><span class="line">git config --global user.name &quot;yourname&quot;</span><br><span class="line">git config --global user.email &quot;youremail&quot;</span><br><span class="line">完成后创建SSH,一路回车就行</span><br><span class="line">ssh-keygen -t rsa -C &quot;youremail&quot;</span><br></pre></td></tr></table></figure>
+<p>好的我们SSH已经生成,复制对应文件的所有内容<br><img src="/2024/03/15/hexo%E5%9F%BA%E7%A1%80%E7%89%88%E6%9C%AC/SSH.png"><br>而后进入github点击右上角头像再点setting，找到 <strong>SSH keys</strong> 的设置选项，点击 <strong>New SSH key</strong> 把你复制的内容粘贴进去如下图<br><img src="/2024/03/15/hexo%E5%9F%BA%E7%A1%80%E7%89%88%E6%9C%AC/%E6%89%93%E5%BC%80ssh.png"><br><img src="/2024/03/15/hexo%E5%9F%BA%E7%A1%80%E7%89%88%E6%9C%AC/%E7%B2%98%E8%B4%B4.png"><br>第三步：回到项目执行命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//初始化git</span><br><span class="line">git init</span><br><span class="line">//在github刚才成功的页面可以获取到下方命令</span><br><span class="line">git remote add origin &lt;远程仓库地址&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="/2024/03/15/hexo%E5%9F%BA%E7%A1%80%E7%89%88%E6%9C%AC/%E5%91%BD%E4%BB%A4.png"><br>第四步：部署博客<br>先去下载一个依赖</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>修改Hexo根目录下 <strong>_config.yml</strong> 文件中 <strong>deploy</strong> 的相关属性</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: &lt;远程仓库地址&gt;</span><br><span class="line">  //branch:指的是远程仓库的某一个分支，我创建的默认分支是main所以就写这个了你们按自己的来</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+<p>好了，重头戏要开始了。执行以下命令让我们真正开始部署吧</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run deploy</span><br></pre></td></tr></table></figure>
+<p>完成之后就可以打开站点查看了这是我的博客地址欢迎参观。<a target="_blank" rel="noopener" href="https://yjs-cy.github.io/">https://yjs-cy.github.io/</a>。<br>自己的站点就是把 <a target="_blank" rel="noopener" href="https://yourname.github.io/">https://yourname.github.io</a> 中的yourname替换成你的github名字</p>
+<h2 id="源代码发布"><a href="#源代码发布" class="headerlink" title="源代码发布"></a>源代码发布</h2><p>上面我们只是部署了我们自己的静态网页但是源码还在当前电脑上，如果我们换了一台电脑可咋整呀。解决办法来了<br>第一步：本地保存</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">//四个命令依次执行，新分支名就自己想喽</span><br><span class="line">git add .</span><br><span class="line">git commit -m &#x27;feat:blog init&#x27;</span><br><span class="line">git checkout -b 新分支名</span><br><span class="line">git push --set-upstream origin 新分支名</span><br></pre></td></tr></table></figure>
+<p>之后，换电脑就将代码拉下来，重新生成SSH，重新下载依赖就好。<br>基础博客就这样了，后面我们慢慢优化。<br>欢迎留下你们的博客地址，后期有友链功能后也可以互相添加友链哟！！！！！</p>
+
+    </div>
+    <div class="right">
+        <div class="right-div"><!-- 引入样式文件 -->
+
+<link rel="stylesheet" href="/css/author.css">
+
+
+<div class="author">
+    <img src="/author.jpeg" alt="">
+    <div>Ryan</div>
+    <div class="yan">我就是菜鸡</div>
+    <div class="tag">
+        <div>
+            <span>4</span>
+            <span>文章</span>
+        </div>
+        <div>
+            <span>1</span>
+            <span>分类</span>
+        </div>
+        <div>
+            <span>0</span>
+            <span>标签</span>
+        </div>
+    </div>
+</div></div>
+    </div>
+</div></div>
+    </div>
+</body>
+</html>
