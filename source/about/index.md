@@ -1,7 +1,6 @@
 ---
 title: about
 date: 2024-03-06 15:01:49
-top_img: "/index/top_image.jpg"
 layout: about
 ---
 
@@ -10,7 +9,7 @@ layout: about
 
 🧠 当前学习：hexo【ing】
 
-📫 联系我：微信 or 邮箱
+📫 联系我：微信：Ryan-Y17
 
 ⚡️ 座右铭：我就是菜
 
